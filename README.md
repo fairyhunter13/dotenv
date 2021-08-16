@@ -2,7 +2,7 @@
 
 ![build status](https://travis-ci.org/alexsasharegan/dotenv.svg?branch=master)
 [![Go Report Card](https://goreportcard.com/badge/github.com/alexsasharegan/dotenv)](https://goreportcard.com/report/github.com/alexsasharegan/dotenv)
-![godocs](https://godoc.org/github.com/alexsasharegan/dotenv?status.svg)
+![godocs](https://godoc.org/github.com/fairyhunter13/dotenv?status.svg)
 
 A Go (golang) implementation of dotenv _(inspired by: [https://github.com/joho/godotenv](https://github.com/joho/godotenv))_.
 
@@ -11,7 +11,7 @@ A Go (golang) implementation of dotenv _(inspired by: [https://github.com/joho/g
 As a **Library**:
 
 ```sh
-go get github.com/alexsasharegan/dotenv
+go get github.com/fairyhunter13/dotenv
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ ESCAPED='You can escape you\'re strings too.'
 
 # A comment line that will be ignored
 GIT_PROVIDER=github.com
-LIB=${GIT_PROVIDER}/alexsasharegan/dotenv # variable interpolation (plus ignored trailing comment)
+LIB=${GIT_PROVIDER}/fairyhunter13/dotenv # variable interpolation (plus ignored trailing comment)
 ```
 
 In your application:
@@ -40,7 +40,7 @@ import (
     "log"
     "os"
 
-    "github.com/alexsasharegan/dotenv"
+    "github.com/fairyhunter13/dotenv"
 )
 
 func main() {
@@ -58,4 +58,4 @@ func main() {
 
 ## Documentation
 
-[https://godoc.org/github.com/alexsasharegan/dotenv](https://godoc.org/github.com/alexsasharegan/dotenv)
+[https://godoc.org/github.com/fairyhunter13/dotenv](https://godoc.org/github.com/fairyhunter13/dotenv)
