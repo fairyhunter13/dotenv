@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/alexsasharegan/dotenv"
+	"github.com/fairyhunter13/dotenv"
 )
 
 var noopPresets = make(map[string]string)
@@ -190,8 +190,8 @@ func TestLoadBenchEnv(t *testing.T) {
 		"K": "http",
 		"L": "http://",
 		"M": "http://github.com",
-		"N": "http://github.com/alexsasharegan",
-		"O": "http://github.com/alexsasharegan/dotenv",
+		"N": "http://github.com/fairyhunter13",
+		"O": "http://github.com/fairyhunter13/dotenv",
 		"P": "124215",
 		"Q": "127.0.0.1",
 		"R": ";aklsdgj",
