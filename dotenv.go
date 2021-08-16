@@ -177,11 +177,17 @@ func Load(paths ...string) (err error) {
 	if len(paths) == 0 {
 		paths = append(paths, ".env")
 	}
+	var isSuccess bool
 	for _, path := range paths {
 		err = loadFile(path, false)
 		if err != nil {
-			return
+			continue
 		}
+
+		isSuccess = true
+	}
+	if isSuccess {
+		err = nil
 	}
 	return
 }
@@ -192,11 +198,17 @@ func Overload(paths ...string) (err error) {
 	if len(paths) == 0 {
 		paths = append(paths, ".env")
 	}
+	var isSuccess bool
 	for _, path := range paths {
 		err = loadFile(path, true)
 		if err != nil {
-			return
+			continue
 		}
+
+		isSuccess = true
+	}
+	if isSuccess {
+		err = nil
 	}
 	return
 }

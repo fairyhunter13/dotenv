@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/alexsasharegan/dotenv"
+	"github.com/fairyhunter13/dotenv"
 )
 
 func ExampleLoad() {
@@ -32,7 +32,7 @@ func ExampleReadFile() {
 
 	fmt.Printf("%s : %s\n", "LIB", env["LIB"])
 	// Output:
-	// LIB : github.com/alexsasharegan/dotenv
+	// LIB : github.com/fairyhunter13/dotenv
 }
 
 func ExampleParseString() {
