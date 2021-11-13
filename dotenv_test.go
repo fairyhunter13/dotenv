@@ -340,7 +340,7 @@ func BenchmarkDotenv(b *testing.B) {
 	defer f.Close()
 	b.StartTimer()
 	for i := 0; i < b.N; i++ {
-		dotenv.Read(f)
+		_, _ = dotenv.Read(f)
 	}
 	b.StopTimer()
 }

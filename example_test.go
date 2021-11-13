@@ -24,6 +24,24 @@ func ExampleLoad() {
 	// MESSAGE : A message containing important spaces.
 }
 
+func ExampleLoad2() {
+	err := dotenv.Load2(
+		dotenv.WithPaths("fixtures/example.env"),
+	)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	envKeys := []string{"S3_BUCKET", "SECRET_KEY", "MESSAGE"}
+	for _, key := range envKeys {
+		fmt.Printf("%s : %s\n", key, os.Getenv(key))
+	}
+	// Output:
+	// S3_BUCKET : YOURS3BUCKET
+	// SECRET_KEY : YOURSECRETKEYGOESHERE
+	// MESSAGE : A message containing important spaces.
+}
+
 func ExampleReadFile() {
 	env, err := dotenv.ReadFile("fixtures/example.env")
 	if err != nil {
